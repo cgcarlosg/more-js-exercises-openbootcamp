@@ -5,12 +5,18 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node Clases/index.js"
+    "start": "http-server .",
+    "lint": "eslint eslint/index.js",
+    "lint-fix": "eslint --fix eslint/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.1"
+    "chalk": "^5.0.1",
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.20.0"
   }
 }
